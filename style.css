@@ -1,0 +1,94 @@
+
+@keyframes bg{
+	0%{
+		background: #fcee21;
+	}
+	25%{
+		background: #00acfc;
+	}
+	50%{
+		background: #7200ff;
+	}
+	75%{
+		background: #ff0048;
+	}
+	100%{
+		background: #fcee21;
+	}
+}
+@keyframes bg2{
+	0%{
+		background: #fff;
+	}
+	25%{
+		background: #00acfc;
+	}
+	50%{
+		/*background: #7200ff;*/
+	}
+	75%{
+		background: #ff0048;
+	}
+	100%{
+		background: #fff;
+	}
+}
+
+body{
+	/*animation: bg2 10s infinite linear;*/
+	/*background: linear-gradient( #fff, #00acfc, #7200ff, #ff0048 );*/
+	/*background: linear-gradient( -20deg, #b7d8ff, #fff );*/
+	/*background: linear-gradient(160deg, #00c6ff, #6600ff );*/
+	background: linear-gradient(160deg, rgba(0, 200, 255, 0.1), rgba(100,0,255, 0.1) );
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+@keyframes container{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(359deg);
+	}
+}
+
+.container{
+	animation: container 10s infinite linear;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+@keyframes bee{
+	0%{
+		transform: scale(1, 0.9) translateY(10%);
+	}
+	50%{
+		transform: scale(1, 1) translateY(-10%);
+	}
+	100%{
+		transform: scale(1, 0.9) translateY(10%);
+	}
+}
+
+.bee{
+	animation: bee 1s infinite ease-in-out;
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: auto;
+}
+
+@media(max-width: 640px){
+
+	.bee{
+		width: 100px
+	}
+}
